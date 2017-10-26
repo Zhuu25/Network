@@ -23,12 +23,13 @@ public class DatabaseConnection {
         }
     }
 
-    public String getWord(){
-        String sql = "Select Word from Vocab";
+    public String getWord(String type){
+        String sql = "Select Word from Vocab where Type = '"+type+"' order by RANDOM()";
         String vocab = "";
         try{
             ResultSet resultSet = statement.executeQuery(sql);
             vocab = resultSet.getString(1);
+            System.out.println(vocab);
         }catch (SQLException ex){
             ex.printStackTrace();
         }

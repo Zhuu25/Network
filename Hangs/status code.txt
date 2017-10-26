@@ -1,0 +1,4 @@
+status code
+111: ok from client to server, server to client
+555: error client cant connect to server
+666: error server cant connnet to client

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #91b6d4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Model">
+   <children>
+      <GridPane layoutY="1.0" prefHeight="600.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="580.0" minWidth="10.0" prefWidth="570.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.0" minWidth="10.0" prefWidth="230.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="294.0" minHeight="10.0" prefHeight="208.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="392.0" minHeight="10.0" prefHeight="392.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <Label fx:id="word" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </center>
+                  </BorderPane>
+                  <GridPane prefHeight="381.0" prefWidth="510.0" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="a" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="A" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                           </font></Button>
+                         <Button fx:id="b" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="B" textFill="WHITE" GridPane.columnIndex="1">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="c" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="C" textFill="WHITE" GridPane.columnIndex="2">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="d" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="D" textFill="WHITE" GridPane.columnIndex="3">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="e" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="E" textFill="WHITE" GridPane.columnIndex="4">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="f" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="F" textFill="WHITE" GridPane.columnIndex="5">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                        <Button fx:id="g" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="G" textFill="WHITE" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                            </font></Button>
+                         <Button fx:id="h" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="H" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="i" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="I" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="j" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="J" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="k" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="K" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="l" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="L" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                        <Button fx:id="m" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="M" textFill="WHITE" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                            </font></Button>
+                         <Button fx:id="n" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="N" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="o" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="O" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="p" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="P" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                        <Button fx:id="q" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="Q" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                            </font></Button>
+                        <Button fx:id="r" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="R" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                            </font></Button>
+                        <Button fx:id="s" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="S" textFill="WHITE" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                            </font></Button>
+                         <Button fx:id="t" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="T" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="u" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="U" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="v" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="V" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button fx:id="w" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="W" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                         <Button mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="X" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="3" fx:id="x">
+                             <font>
+                                 <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                             </font></Button>
+                        <Button fx:id="y" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="Y" textFill="WHITE" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                            </font></Button>
+                        <Button fx:id="z" mnemonicParsing="false" onAction="#play" style="-fx-background-color: #2b506e;" text="Z" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+                            </font></Button>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Line endX="20.0" layoutX="134.0" layoutY="119.0" startX="-100.0" strokeWidth="4.0" />
+                  <Line endX="300.0" layoutX="-70.0" layoutY="320.0" rotate="90.0" startX="-100.0" strokeWidth="4.0" />
+                  <Line fx:id="line" endX="-35.0" layoutX="222.0" layoutY="152.0" rotate="90.0" startX="-100.0" strokeWidth="4.0" />
+                  <Circle fx:id="head" fill="#1f93ff00" layoutX="155.0" layoutY="212.0" opacity="0.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" />
+                  <Line fx:id="body" endX="20.0" layoutX="195.0" layoutY="300.0" opacity="0.0" rotate="90.0" startX="-100.0" strokeWidth="3.0" />
+                  <Line fx:id="leLeg" endX="-20.0" layoutX="188.0" layoutY="393.0" opacity="0.0" rotate="129.9" startX="-100.0" strokeWidth="3.0" />
+                  <Line fx:id="riLeg" endX="-19.0" layoutX="242.0" layoutY="393.0" opacity="0.0" rotate="50.2" startX="-100.0" strokeWidth="3.0" />
+                  <Line fx:id="leArm" endX="-30.0" layoutX="200.0" layoutY="307.0" opacity="0.0" rotate="126.62" startX="-100.0" strokeWidth="3.0" />
+                  <Line fx:id="riArm" endX="-30.0" layoutX="236.0" layoutY="310.0" opacity="0.0" rotate="63.4" startX="-100.0" strokeWidth="3.0" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
